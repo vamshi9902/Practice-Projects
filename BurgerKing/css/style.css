@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    color: whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 10;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 10px;
+}
+nav li a:hover{
+    color: orange;
+}
+a{
+    text-decoration: none;
+    font-family: calibri;
+    font-weight: bold;
+}
+.order{
+    all: unset;
+    background-color: orange;
+    padding: 6px 20px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.icons-container i{
+    margin: 0px 10px;
+}
+body{
+    height: 100vh;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+}
+.bannerText-container{
+    width: 60%;
+    padding-top: 12%;
+    padding-left: 5%;
+    position: relative;
+    font-size: x-large;
+}
+.offers{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.off-card1{
+    background-color: #020231;
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+.off-img{
+    display: block;
+    overflow: hidden;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    border: orange solid 5px;
+}
+.off-img img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.off-img img:hover{
+    transform: scale(1.2);
+}
+h3{
+    font-size: xx-large;
+}
+.off-text p span{
+    font-size: x-large;
+}
+.off-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+}
+.off-text button{
+    font-size: medium;
+    width: 150px;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: cursive;
+    color: black;
+}
+.menu{
+    margin-top: 10%;
+}
+.menu nav{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.menu nav li a{
+    color: black;
+}
+.menu nav li a:hover{
+    text-decoration: underline;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.card{
+    width: 20%;
+    height: fit-content;
+    background-color: rgb(58, 58, 58);
+    border-radius: 20px;
+    color: whitesmoke;
+    margin-bottom: 4%;
+}
+.imgcontent{
+    background-color: lightgray;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    border-radius: 20px 20px 0px 20%;
+    padding:  20px 10px;
+}
+.imgcontent img{
+    width: 50%;
+    transition: all .5s;
+}
+.imgcontent img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.cicons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.ctext{
+    padding: 10px;
+}
+.ctext p{
+    margin-top: 4%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.cicons i{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.weare{
+    height: 100vh;
+    background-size: 100%;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.weare img{
+    height: 90vh;
+}
+.weare .wtext{
+    width: 50%;
+    text-align: center;
+    font-size: large;
+}
+.wtext p{
+    text-align: justify;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+input{
+    width: 40%;
+    padding: 10px;
+}
+.person{
+    width: 40%;
+    text-align: start;
+    padding: 15px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.comments{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.links ul{
+    list-style: none;
+    text-align: center;
+}
+footer p{
+    text-align:  center;
+    font-size: small;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+footer li i{
+    margin: 10px 5px;
+}
+.nav-bars{
+    display: none;
+}
+
+
+@media screen and (max-width : 800px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .nav-bars{
+        display: block;
+    }
+    .icons-container{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .active{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 45px;
+        display: block;
+        background-color: #000000;
+    }
+    .active ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        font-size: smaller;
+    }
+    .nav-bars:hover{
+        cursor: pointer;
+    }
+    .bannerText-container{
+        font-size: large;
+    }
+    
+    .weare{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .weare img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .weare p {
+        text-align: center; 
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .person{
+        width: 80%;
+        margin: 10px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 770px){
+    .bannerText-container{
+        padding-top: 35%;
+        font-size: larger;
+        width: 80%;
+    }
+    .menucards .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .imgcontent{
+        height: fit-content;
+    }
+}
+@media screen and (max-width : 1186px){
+    .offers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .off-card1{
+        margin: 10px;
+        width: 80%;
+    }
+}
+
