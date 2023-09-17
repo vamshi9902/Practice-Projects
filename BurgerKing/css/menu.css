@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:cursive;
+    font-family: 'Caveat', cursive;
     color: whitesmoke;
 }
 html{
@@ -31,7 +31,7 @@ nav li a:hover{
 }
 a{
     text-decoration: none;
-    font-family: calibri;
+    font-family: 'Caveat', cursive;
     font-weight: bold;
 }
 .order{
@@ -48,7 +48,7 @@ h2{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    font-family: cursive;
+    font-family: 'Parisienne', cursive;
     color: black;
 }
 .menu{
@@ -129,6 +129,9 @@ input{
     width: 40%;
     padding: 10px;
 }
+.nav-bars{
+    display: none;
+}
 @media screen and (max-width : 800px){
     header{
         display: flex;
@@ -148,7 +151,7 @@ input{
         width: 100%;
         position: absolute;
         left: 0;
-        top: 45px;
+        top: 40px;
         display: block;
         background-color: #000000;
     }
@@ -167,7 +170,14 @@ input{
     .bannerText-container{
         font-size: large;
     }
-    
+    .menu{
+        margin-top: 15%;
+    }
+    form{
+        width: 100%;
+        text-align: center;
+        margin-top: 15%;
+    }
     .weare{
         width: 100vw;
         height: fit-content;
