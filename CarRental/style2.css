@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Open+Sans&family=Roboto+Slab:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+
+:root {
+    --primary: hsl(4, 100%, 50%);
+    --hover: hsl(4, 100%, 60%);
+    --text: hsl(0, 0%, 40%);
+    --shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+/* Font styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.h2,
+.h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: larger;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+.p {
+    font-size: 1.2rem;
+}
+
+h1+br+p {
+    width: 40%;
+    text-align: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.sidenav {
+    display: none;
+    background-color: white;
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    transform: translateX(100%);
+    z-index: 10;
+}
+
+.sidenav ul {
+    flex-direction: column;
+    line-height: 2rem;
+    padding-top: 5rem;
+}
+
+.shownav {
+    transform: translateX(0%);
+    display: block;
+}
+
+#cross {
+    font-size: x-large;
+}
+
+.icon {
+    display: none;
+}
+
+button {
+    all: unset;
+    padding: 10px 25px;
+    background-color: var(--primary);
+    color: white;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+ul a:hover {
+    color: var(--primary);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* Banner */
+.bg-banner{
+    width: 100%;
+    height: 50vh;
+    background: url("./images/hero/heroes-bg.png") center;
+    background-size: cover;
+    position: relative;
+    top: -90px;
+    z-index: -30;
+}
+.bg-layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.text-box{
+    padding: 150px 200px;
+}
+/* Footer Section */
+footer h3 {
+    font-size: large;
+    font-weight: bolder;
+}
+
+footer ul li:first-child {
+    margin: 1rem 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 5rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: -1rem 0;
+}
+
+
+.sub-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-form input {
+    width: 100%;
+}
+
+.sub-form button {
+    all: unset;
+    background-color: orangered;
+    padding: 8px 10px;
+    color: white;
+    border: 2px solid;
+}
+
+footer li p {
+    line-height: 1.5rem;
+}
+footer input{
+    padding: 8px;
+}
+
+
+/* About */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.main{
+    width: 50%;
+}
+.main .container{
+    margin-top: 5%;
+    display: flex;
+    gap: 15%;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+/* Plan a Trip Section */
+.plantrip {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.pcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 4rem;
+}
+
+.card {
+    text-align: center;
+    font-size: large;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container p {
+    text-align: center;
+    width: 50%;
+}
+
+
+/* Model */
+.cars-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.singlecard{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    margin-bottom: 100px;
+}
+.singlecard img{
+    width: 100%;
+    height: 300px;
+}
+.singlecard h1{
+    font-size: xx-large;
+}
+.card-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.singlecard button{
+    display: block;
+    width: 80%;
+    padding: 20px 0;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.rigth p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+.left p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
+.smallbanner{
+    width: 100%;
+    background: url("./images/banners/book-banner.png") center no-repeat;
+    background-size: cover;
+}
+.smallbanner-text{
+    text-align: center;
+    color: white;
+    padding: 6rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.smallbanner-text span{
+    font-size: 2rem;
+}
+/* Comments Section */
+.comments {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.single-comment {
+    background-color: white;
+    padding: 2rem 4rem;
+    box-shadow: var(--shadow);
+}
+
+.sc {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: black;
+    text-align: justify;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.detail img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: smaller;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.person-card{
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 20px 15px;
+    margin-bottom: 100px;
+}
+.person-card img{
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+}
+.details{
+    text-align: center;
+    padding: 20px 0;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+    padding: 3rem;
+    line-height: 3rem;
+    background: url("./images/banners/bg-contact.png") center;
+}
+.add-info p{
+    font-size: large;
+}
+.para{
+    line-height: 2rem;
+    width: 70%;
+    text-align: start;
+}
+.contact form{
+    display: grid;
+}
+.contact form button{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
+input{
+    padding: 20px 10px;
+}
+@media screen and (max-width:1150px) {
+    .team{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cars-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:959px) {
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    nav,
+    .signIn {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        font-size: x-large; 
+    }
+    .pcards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 100px;
+        padding: 4rem;
+    }
+    .plantrip{
+        height: fit-content;
+    }
+    .about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .main{
+        width: 60%;
+        text-align: center;
+    }
+    .main .container{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .cars-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .contact{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 5rem;
+    }
+}
